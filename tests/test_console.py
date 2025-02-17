@@ -5,8 +5,12 @@ Contains the class TestConsoleDocs
 
 import console
 import inspect
+import os
+import sys
 import pep8
 import unittest
+
+
 HBNBCommand = console.HBNBCommand
 
 
