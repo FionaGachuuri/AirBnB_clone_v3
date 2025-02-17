@@ -15,12 +15,12 @@ def get_status():
 def get_stats():
     """Retrieves the number of each object by type"""
     objects = {
-        "amenities": 47, 
-        "cities": 36, 
-        "places": 154, 
-        "reviews": 718, 
-        "states": 27, 
-        "users": 31
+        "amenities": Amenity, 
+        "cities": City, 
+        "places": Place, 
+        "reviews": Review, 
+        "states": State, 
+        "users": User
     }
     for key, value in objects.items():
         objects[key] = storage.count(value)
