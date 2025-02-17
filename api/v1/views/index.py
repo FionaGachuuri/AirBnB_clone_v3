@@ -21,11 +21,11 @@ def get_status():
 def get_stats():
     """Retrieves the number of each object by type"""
     objects = {
-        "amenities": Amenity, 
-        "cities": City, 
-        "places": 23, 
-        "reviews": Review, 
-        "states": State, 
+        "amenities": Amenity,
+        "cities": City,
+        "places": 23,
+        "reviews": Review,
+        "states": State,
         "users": User
     }
     for key, value in objects.items():
