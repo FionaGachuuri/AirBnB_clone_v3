@@ -11,19 +11,19 @@ from models.state import State
 from models.user import User
 
 
-@app_views.route('/status', methods=['GET'])
+@app_views.route('/status')
 def get_status():
     """Returns the status of the API."""
     return jsonify({"status": "OK"})
 
 
-@app_views.route('/stats', methods=['GET'])
+@app_views.route('/stats')
 def get_stats():
     """Retrieves the number of each object by type"""
     objects = {
         "amenities": Amenity,
         "cities": City,
-        "places": 23,
+        "places": Place,
         "reviews": Review,
         "states": State,
         "users": User
